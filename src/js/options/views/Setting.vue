@@ -127,7 +127,7 @@ export default {
             this.config = config;
             this.loading = false;
 
-            this.refreshTime();
+            // this.refreshTime();
         });
     },
     methods: {
@@ -158,9 +158,9 @@ export default {
                 this.second = (+new Date - +date) / 1000;
                 this.time = secondToTime(this.second);
                 this.leftTime = secondToTime(this.config.refreshTimeout - this.second);
-                // setTimeout(() => {
-                //     this.refreshTime();
-                // }, 1000);
+                setTimeout(() => {
+                    this.refreshTime();
+                }, 1000);
             });
         }
     }
