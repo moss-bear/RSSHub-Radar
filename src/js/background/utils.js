@@ -41,7 +41,7 @@ chrome.storage.onChanged.addListener((result) => {
 
 chrome.alarms.onAlarm.addListener((alarm) => {
     if (alarm.name === 'refreshRules') {
-        refreshRules();
+        // refreshRules();
     }
 });
 
