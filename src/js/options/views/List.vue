@@ -3,7 +3,7 @@
         <el-main>
             <div class="title">{{ $i18n.t('rules') }}</div>
             <div class="tip">
-                <p v-html="$i18n.t('for more rules join us')"></p>
+                <p v-html="$i18n.t('for more rules join us') + 'vz'"></p>
                 <p>{{ $i18n.t('updated time ago', {hours: hours, minutes: minutes})}}</p>
             </div>
             <div class="content" v-loading="loading">

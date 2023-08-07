@@ -29,7 +29,7 @@ export const defaultConfig = {
         bazqux: false,
         local: false,
     },
-    refreshTimeout: 5 * 60 * 60,
+    refreshTimeout: 20,
     // typical UA:
     //   Firefox: Mozilla/5.0 (X11; Linux x86_64; rv:99.0) Gecko/20100101 Firefox/99.0
     //   Chromium/Chrome: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36

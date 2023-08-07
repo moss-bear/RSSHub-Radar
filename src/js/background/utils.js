@@ -20,7 +20,7 @@ function schedule(time = +new Date() + config.refreshTimeout * 1000) {
 function initSchedule() {
     getRulesDate((lastDate) => {
         if (!lastDate || +new Date() - lastDate > config.refreshTimeout * 1000) {
-            refreshRules();
+            // refreshRules();
             schedule();
         } else {
             schedule(lastDate + config.refreshTimeout * 1000);
@@ -41,6 +41,7 @@ chrome.storage.onChanged.addListener((result) => {
 
 chrome.alarms.onAlarm.addListener((alarm) => {
     if (alarm.name === 'refreshRules') {
+        console.log('refreshRules invoke');
         // refreshRules();
     }
 });
