@@ -48,5 +48,6 @@
   "update log": "更新日志",
   "question feedback": "问题反馈",
   "rsshub documentation": "RSSHub 文档: <a target=\"_blank\" href=\"https://docs.rsshub.app\">https://docs.rsshub.app</a>",
-  "everything is possible with rss": "万物皆可 RSS"
+  "everything is possible with rss": "万物皆可 RSS",
+  "debugging rules": "调试规则"
 }

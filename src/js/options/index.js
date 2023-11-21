@@ -5,8 +5,9 @@ import App from './App.vue';
 import Setting from './views/Setting.vue';
 import List from './views/List.vue';
 import About from './views/About.vue';
+import DebuggingRules from './views/DebuggingRules.vue';
 import i18n from '../common/i18n';
-import { Container, Menu, MenuItem, Aside, Header, Main, Footer, Input, Checkbox, Message, Loading, Collapse, CollapseItem, Button, Progress, Tooltip } from 'element-ui';
+import { Container, Menu, MenuItem, Aside, Header, Main, Footer, Input, Checkbox, Message, Loading, Collapse, CollapseItem, Button, Progress, Tooltip, Submenu } from 'element-ui';
 
 // import translations from "../../translations/translations.json";
 // const i18n = new I18n(translations);
@@ -30,6 +31,7 @@ Vue.use(CollapseItem);
 Vue.use(Button);
 Vue.use(Progress);
 Vue.use(Tooltip);
+Vue.use(Submenu);
 
 Vue.prototype.$loading = Loading.service;
 Vue.prototype.$message = Message;
@@ -41,6 +43,7 @@ const routes = [
     { path: '/setting', component: Setting },
     { path: '/list', component: List },
     { path: '/about', component: About },
+    { path: '/debugging-rules', component: DebuggingRules },
 ];
 const router = new VueRouter({
     routes,

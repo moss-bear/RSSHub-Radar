@@ -13,10 +13,20 @@
                     <i class="el-icon-setting"></i>
                     <span slot="title">{{ $i18n.t('settings') }}</span>
                 </el-menu-item>
-                <el-menu-item index="/list">
-                    <i class="el-icon-magic-stick"></i>
-                    <span slot="title">{{ $i18n.t('list of rules') }}</span>
-                </el-menu-item>
+                <el-submenu>
+                    <template slot="title">
+                        <i class="el-icon-magic-stick"></i>
+                        <span>规则</span>
+                    </template>
+                    <el-menu-item index="/list">
+                            <i class="el-icon-magic-stick"></i>
+                            <span slot="title">{{ $i18n.t('list of rules') }}</span>
+                    </el-menu-item>
+                    <el-menu-item index="/debugging-rules">
+                            <i class="el-icon-magic-stick"></i>
+                            <span slot="title">{{ $i18n.t('debugging rules') }}</span>
+                    </el-menu-item>
+                </el-submenu>
                 <el-menu-item index="/about">
                     <i class="el-icon-coordinate"></i>
                     <span slot="title">{{ $i18n.t('about') }}</span>
